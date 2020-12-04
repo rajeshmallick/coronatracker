@@ -70,4 +70,7 @@ table {
 .total_death h2,.total_recovered h2{
   color: #fff;
 }
+.text-center{
+  text-align: center;
+}
 

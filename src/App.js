@@ -43,7 +43,7 @@ class App extends Component
     return(
       this.state.items.map(item => {
         return(
-          <tr>
+          <tr key={item.Country}>
         <td>{item.Country ? item.Country: 'NA' }</td>
         <td>{item.NewConfirmed}</td>
         <td>{item.TotalConfirmed}</td>
@@ -134,7 +134,7 @@ class App extends Component
               </table>
               
       </div>
-      :<div className="loading"><img src={loading} alt="loading"/></div> 
+      :<div className="loading text-center"><img src={loading} alt="loading"/></div> 
   }
         </div>
     );
